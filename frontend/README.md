@@ -1,16 +1,85 @@
-# React + Vite
+# 🖥️ Student Expense Analysis — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **React + Vite** frontend for the Student Expense Analysis & Forecasting platform.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Quick Start
 
-## React Compiler
+```bash
+npm install
+npm run dev
+# Opens at http://localhost:5173
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Make sure the backend server is running on `http://localhost:5000` first.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Folder Structure
+
+```
+frontend/
+├── src/
+│   ├── components/
+│   │   └── Sidebar.jsx          # Navigation sidebar
+│   ├── pages/
+│   │   ├── Dashboard.jsx        # Income/expense charts & summary cards
+│   │   ├── UploadData.jsx       # CSV bulk upload + manual transaction form
+│   │   ├── Predictions.jsx      # ML expense forecast page
+│   │   └── Recommendations.jsx  # Personalised financial tips
+│   ├── App.jsx                  # Route definitions
+│   ├── main.jsx                 # React entry point
+│   └── index.css                # Tailwind CSS global styles
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| **React 18** | UI framework |
+| **Vite** | Build tool & dev server |
+| **Tailwind CSS v4** | Utility-first styling |
+| **React Router** | Client-side routing |
+| **Axios** | HTTP requests to the backend API |
+| **Recharts** | Charts on the Dashboard |
+| **Lucide React** | Icons |
+
+---
+
+## 📄 Pages
+
+| Route | Page | Description |
+|---|---|---|
+| `/dashboard` | Dashboard | Financial summary with charts per student |
+| `/upload` | Upload Data | Bulk CSV upload or manual entry form |
+| `/predictions` | Predictions | Next-month expense forecast via ML |
+| `/recommendations` | Recommendations | Tips based on spending classification |
+
+---
+
+## 🔗 API Base URL
+
+All API calls go to:
+
+```
+http://localhost:5000/api
+```
+
+Configure this in `vite.config.js` under the `proxy` key if needed.
+
+---
+
+## 📦 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start Vite dev server |
+| `npm run build` | Build production bundle |
+| `npm run preview` | Preview production build locally |
