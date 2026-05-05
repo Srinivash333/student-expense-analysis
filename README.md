@@ -83,7 +83,7 @@ Make sure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/student-expense-analysis.git
+git clone https://github.com/Srinivash333/student-expense-analysis.git
 cd student-expense-analysis
 ```
 
