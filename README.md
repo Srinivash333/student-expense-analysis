@@ -83,7 +83,7 @@ Make sure you have the following installed:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<YOUR-USERNAME>/student-expense-analysis.git
+git clone https://github.com/Srinivash333/student-expense-analysis.git
 cd student-expense-analysis
 ```
 
@@ -198,7 +198,7 @@ git push
 ### First-time push to GitHub
 
 ```bash
-git remote add origin https://github.com/<YOUR-USERNAME>/student-expense-analysis.git
+git remote add origin https://github.com/Srinivash333/student-expense-analysis.git
 git branch -M main
 git push -u origin main
 ```
